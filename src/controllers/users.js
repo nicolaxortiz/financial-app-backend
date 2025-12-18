@@ -108,7 +108,7 @@ export const usersController = {
     } catch (error) {
       return res.status(500).send({
         status: 500,
-        message: "Server error, try again later, please",
+        message: "Server error, try again later, please: " + error,
       });
     }
   },
