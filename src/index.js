@@ -9,7 +9,8 @@ import codesRouter from "./routes/codes.routes.js";
 const app = express();
 
 const corsOptions = {
-  origin: "*",
+  origin: process.env.ORIGIN_ENV,
+  credentials: true,
   optionsSuccessStatus: 200,
 };
 
